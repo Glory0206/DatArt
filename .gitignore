@@ -2,50 +2,56 @@
 # FastAPI (Backend)
 # =================================================================
 
-# 가상환경 폴더
+# Virtual Environment
 venv/
 .venv/
 env/
-.env/
 
-# 파이썬 캐시 파일
+# Python Cache
 __pycache__/
 *.py[cod]
 *$py.class
 
-# 민감 정보
-.env
-
-# Jupyter Notebook 체크포인트
+# Jupyter Notebook Checkpoints
 .ipynb_checkpoints
 
-# VSCode 파이썬 설정
-.vscode/pylintrc
 
 # =================================================================
 # React (Frontend)
 # =================================================================
 
-# 의존성 패키지 폴더
+# Dependencies
 frontend/node_modules/
 
-# 빌드 결과물
+# Build output
 frontend/dist/
-frontend/.next/
+frontend/dist-ssr/
 frontend/build/
+frontend/.next/
 
-# 로그 파일
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
-
-# Vite 로컬 환경 변수 파일
-frontend/.env.local
-frontend/.env.*.local
+# Vite local env files
+frontend/*.local
 
 
 # =================================================================
-# OS / IDE
+# Logs & Sensitive Files
+# =================================================================
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables (API Keys, etc.)
+.env
+
+
+# =================================================================
+# OS / IDE / Editor
 # =================================================================
 
 # macOS
@@ -58,8 +64,13 @@ Thumbs.db
 ehthumbs.db
 desktop.ini
 
-# IDE 설정
+# IDE & Editor Settings
 .idea/
-.vscode/
+.vscode/*
+!.vscode/extensions.json
 *.swp
 *.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
